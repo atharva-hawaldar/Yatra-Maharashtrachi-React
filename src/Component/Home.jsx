@@ -152,7 +152,7 @@ const Home = () => {
               Found a mistake or broken link? Let us know!</p>
 
             <p>💬 <strong>Feedback & Suggestions</strong><br />
-              We'd love to hear your thoughts! <a href="#">[Submit Feedback]</a></p>
+              We'd love to hear your thoughts![Submit Feedback]</p>
           </div>
         </div>
       </section>
