@@ -1,0 +1,322 @@
+/* General Layout */
+.homeWrapper {
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: #f4f4f4;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.homepage {
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  position: relative;
+  text-align: center;
+}
+
+.header-img {
+  width: 100%;
+  height: 750px; /* increased from 300px */
+  object-fit: cover;
+  opacity: 0.85;
+  border-radius: 12px;
+}
+
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f97316;
+  font-size: 4.5rem; /* increased for larger image */
+  font-weight: bold;
+  text-shadow: 3px 3px 10px #000;
+}
+
+/* Explore Maharashtra */
+.explore h2 {
+  text-align: center;
+  font-size: 3.9em; /* ⬆️ made it bigger */
+  color: #f97316;
+  margin-top: 60px;   /* ⬆️ added more top spacing */
+  margin-bottom: 20px; /* ⬇️ optional for more space */
+}
+
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background-color: #f97316;
+  margin: 12px auto 32px;
+  border-radius: 2px;
+}
+
+/* EXPLORE SECTION ENHANCEMENTS */
+.explore {
+  background-color: #0e0e0e;
+  padding: 100px 40px; /* ⬆️ more space */
+  border-radius: 16px;
+  margin-top: 0px;    /* ⬆️ more gap from header */
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);
+}
+
+
+/* Category Cards Layout */
+.fixed-category-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.exact-row {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.center-beach-row {
+  display: flex;
+  justify-content: center;
+}
+
+/* Category Cards */
+.category-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 32px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.category-card {
+  position: relative;
+  width: 300px;
+  height: 300px; /* ⬆️ Increased height */
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  background: #111;
+}
+
+
+.category-card:hover {
+  transform: scale(1.06);
+  box-shadow: 0 10px 20px rgba(255, 123, 0, 0.4);
+  filter: brightness(1.1);
+}
+
+.category-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  filter: brightness(75%);
+}
+
+/* Remove dark background from label */
+.category-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none; /* ✅ no black box */
+}
+
+/* Label Text */
+.category-label {
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  color: #ffffff;
+}
+
+/* Beach card spans two cards */
+.beach-card {
+  width: 632px; /* 320 * 2 + 32px gap */
+  height: 300px;
+}
+
+/* About Section */
+.about {
+  margin-top: 60px;
+  padding: 24px;
+  background-color: rgba(255,255,255,0.03);
+  border-radius: 12px;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  box-shadow: 0 4px 16px rgba(255, 123, 0, 0.25);
+  border-left: 8px solid #f97316;
+  animation: fadeIn 1s ease-in;
+}
+
+.about h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #f97316;
+  margin-bottom: 20px;
+}
+
+/* Help & Support */
+.support-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  animation: fadeIn 1s ease-in;
+}
+
+.support-split {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  background-color: rgba(255,255,255,0.02);
+  padding: 30px;
+  border-radius: 12px;
+  border-left: 8px solid #f97316;
+  box-shadow: 0 4px 16px rgba(255, 123, 0, 0.25);
+}
+
+.support-left,
+.support-right {
+  flex: 1;
+  min-width: 300px;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.support-left h3 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.support-left p,
+.support-right p {
+  margin-bottom: 18px;
+}
+
+.support-right p strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.support-left ul,
+.support-right ul {
+  padding-left: 20px;
+}
+
+.support-left li,
+.support-right li {
+  margin-bottom: 10px;
+}
+
+.support-right a {
+  color: #f97316;
+  text-decoration: underline;
+}
+
+.vertical-line {
+  width: 3px;
+  background-color: #f97316;
+  border-radius: 4px;
+  height: auto;
+}
+
+/* Footer Section */
+.footer {
+  background: linear-gradient(to right, #ff8000, #ff9900);
+  color: #fff;
+  padding: 40px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.footer-logo-section,
+.footer-links-section,
+.footer-contact-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-logo-section h2 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.footer-logo-section p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+}
+
+.footer-links-section h3,
+.footer-contact-section h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.footer-links-section a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.footer-contact-section p {
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.footer-contact-section p i {
+  margin-right: 6px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #000;
+  width: 100%;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

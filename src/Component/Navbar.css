@@ -1,0 +1,134 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust this based on your navbar height */
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f5f5f5; /* Grayish background */
+  padding: 12px 30px;  /* Reduced padding */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Section */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 20px;  /* Slightly smaller */
+  color: #d35400;
+}
+
+.navbar-logo img {
+  width: 40px;  /* Reduced logo size */
+  height: 40px;
+}
+
+/* Links Section */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;  /* Slightly smaller gap */
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 16px;  /* Slightly smaller font */
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #d35400;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-links li a:hover::after {
+  width: 100%;
+}
+
+.navbar-links li a:hover {
+  color: #d35400;
+  transform: scale(1.05);
+}
+
+/* Hamburger */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 24px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+}
+
+/* Mobile Navigation Sidebar */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 58px;  /* Adjusted for smaller navbar */
+  right: 0;
+  width: 220px;
+  background: #f5f5f5;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.08);
+  padding: 18px;
+  z-index: 999;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-nav.active {
+  display: block;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
