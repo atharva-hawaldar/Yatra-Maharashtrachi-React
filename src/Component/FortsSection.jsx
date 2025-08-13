@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
-// Import fort images
 import rajgadImg from './images/forts/Rmainimg.png';
 import tornaImg from './images/forts/torna.jpeg';
 import shivneriImg from './images/forts/shivnary.jpeg';

@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
-// Import local images
 import bhimashankarImg from './images/wildlife/BhimashankarWildlifeSanctuary.png';
 import kaasImg from './images/wildlife/KaasPlateauReservedForest.png';
 import penchImg from './images/wildlife/PenchNationalPark.png';

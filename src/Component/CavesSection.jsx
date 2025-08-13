@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
-// Import cave images
 import karlaImg from './images/Caves/karla.png';
 import bedseImg from './images/Caves/bedse.png';
 import elephantaImg from './images/Caves/elephanta.png';

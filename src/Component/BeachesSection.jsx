@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
-// ✅ Image imports (from src/Component/images/beaches/)
 import ganpatipuleImg from "./images/beaches/Ganpatipule.png";
 import tarkarliImg from "./images/beaches/Tarkarli.png";
 import diveagarImg from "./images/beaches/Divegar.png";

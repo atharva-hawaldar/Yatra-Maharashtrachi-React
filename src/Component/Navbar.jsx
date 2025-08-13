@@ -10,10 +10,8 @@ const Navbar = () => {
 
   const handleNavClick = (sectionId) => {
     if (location.pathname !== "/") {
-      // Navigate to home first
       navigate("/", { state: { scrollTo: sectionId } });
     } else {
-      // Already on home → just scroll
       document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
     }
     setMenuOpen(false);

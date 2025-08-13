@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './FortDetails.css'; // Reusing the same CSS
+import './FortDetails.css';
 import { useParams } from 'react-router-dom';
 
 import bhimmain from './images/wildlife/wildlifemain/BhimashankarWildlifeSanctuary.png';

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import styles from './Home.module.css'; // ✅ Updated import
+import styles from './Home.module.css';
 import { useNavigate, useLocation } from 'react-router-dom';
 import main from './main.jpeg';
 import Beaches from './Beaches.jpeg';
@@ -39,8 +39,6 @@ const categories = [
 const Home = () => {
   const navigate = useNavigate();
   const location = useLocation();
-
-  // ✅ Scroll to the section when coming from another page
   useEffect(() => {
     if (location.state?.scrollTo) {
       const el = document.getElementById(location.state.scrollTo);

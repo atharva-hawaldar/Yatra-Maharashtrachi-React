@@ -19,9 +19,8 @@ export default function Signup() {
       alert("Passwords do not match.");
       return;
     }
-    // TODO: Replace with API call
     console.log("Signing up:", { name, email, password });
-    navigate("/login"); // redirect to login after signup
+    navigate("/login"); 
   };
 
   return (

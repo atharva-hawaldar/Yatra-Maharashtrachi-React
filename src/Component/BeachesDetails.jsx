@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './FortDetails.css'; // You can rename this to BeachDetails.css if preferred
+import './FortDetails.css';
 import { useParams } from 'react-router-dom';
 
 import ganmain from './images/beaches/beachesmain/ganapatipule-beach (1).jpg';

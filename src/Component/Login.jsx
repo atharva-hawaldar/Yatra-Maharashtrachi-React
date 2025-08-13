@@ -13,9 +13,8 @@ export default function Login() {
       alert("Please fill all fields.");
       return;
     }
-    // TODO: Replace with API call
     console.log("Logging in:", { email, password });
-    navigate("/"); // redirect to home after login
+    navigate("/"); 
   };
 
   return (

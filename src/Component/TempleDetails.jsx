@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './FortDetails.css'; // Reuse same CSS or rename to TempleDetails.css
+import './FortDetails.css';
 import { useParams } from 'react-router-dom';
 
 import shivMain from './images/temples/templesMain/ShivaTemple .png';
